@@ -32,7 +32,7 @@ export default function EnviarPDF() {
 
     const formData = new FormData()
     formData.append('file', selectedFile)
-    const response = await api.post('/', formData, {
+    const response = await api.post('/api', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },
