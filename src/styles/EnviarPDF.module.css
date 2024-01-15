@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    color: black;
+}
+
+.dropArea {
+    margin-top: 50px;
+    border: 2px dashed #ccc;
+    padding: 40px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    color: black;
+}
+
+
+.fileInput:hover {
+    background-color: #7473734f;
+}
+.fileInput input[type="file"] {
+    display: none;
+}
+
+.buttonsContainer {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.buttonSend {
+    display: inline-block;
+    background-color: rgb(71, 161, 71);
+    color: #fff;
+    padding: 20px 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+    font-size: 20px;
+
+}
+
+.buttonSend:hover {
+    background-color: rgb(104, 187, 104);
+}
+
+.buttonSend:disabled {
+    visibility: hidden;
+}
