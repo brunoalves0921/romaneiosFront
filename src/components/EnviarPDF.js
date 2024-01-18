@@ -31,8 +31,8 @@ export default function EnviarPDF() {
     if (!selectedFile) return
 
     const formData = new FormData()
-    formData.append('file', selectedFile)
-    const response = await api.post('/api', formData, {
+    formData.append('romaneio', selectedFile)
+    const response = await api.post('/api/romaneios/process', formData, {
       headers: {
         'Content-Type': 'multipart/form-data'
       },
